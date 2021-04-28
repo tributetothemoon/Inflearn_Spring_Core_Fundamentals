@@ -20,4 +20,13 @@ public class OrderServiceImpl implements OrderService {
 
         return new Order(memberId, itemName, itemPrice, discountPrice);
     }
+
+    // 싱글톤 보장 테스팅을 위한 getter 메소드
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
+    }
+
+    public DiscountPolicy getDiscountPolicy() {
+        return discountPolicy;
+    }
 }
