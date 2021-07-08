@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 @RequiredArgsConstructor
 public class LogDemoController {
+    
     private final LogDemoService logDemoService;
     private final MyLogger myLogger;
 
